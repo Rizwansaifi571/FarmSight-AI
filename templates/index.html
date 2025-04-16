@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .hero {
+            background: #28a745; /* Green for agriculture */
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+        .features {
+            padding: 60px 0;
+        }
+
+        .feature-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+    <title>FarmSight-AI - Crop Prediction Tool</title>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Welcome to FarmSight-AI</h1>
+            <p>Predict crop yields with our easy-to-use tool, based on various agricultural factors.</p>
+            <a href="{{ url_for('predict_crop') }}" class="btn btn-light btn-lg">Start Predicting</a>
+        </div>
+    </header>
+
+    <div class="container features">
+        <h2 class="text-center mb-4">Key Features</h2>
+        <div class="row">
+            <div class="col-md-4 feature-item">
+                <h3>Comprehensive Data Input</h3>
+                <p>Enter key parameters like state, district, crop type, and season for accurate predictions.</p>
+            </div>
+            <div class="col-md-4 feature-item">
+                <h3>Reliable Predictions</h3>
+                <p>Our AI model uses advanced algorithms to predict crop yields and recovery based on real-world data.</p>
+            </div>
+            <div class="col-md-4 feature-item">
+                <h3>User-Friendly Interface</h3>
+                <p>A clean and intuitive interface ensures a smooth experience while entering data and viewing results.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 FarmSight-AI. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
